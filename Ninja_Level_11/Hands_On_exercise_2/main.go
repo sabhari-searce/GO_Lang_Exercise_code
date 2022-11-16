@@ -3,8 +3,6 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"log"
-	
 )
 
 type person struct {
@@ -22,7 +20,7 @@ func main() {
 
 	bs, err := toJSON(p1)
 	if err != nil {
-		log.Fatal("Error")
+		log.fatal("error")
 	}
 
 	fmt.Println(string(bs))
